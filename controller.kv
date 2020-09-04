@@ -1,0 +1,17 @@
+#:kivy 2.0.0
+
+<ScrollViewWithZoom>:
+    image:loaded_img
+
+    bar_margin:10
+    bar_width:10
+    
+    scroll_type:['bars']
+
+    ImageAnnotate:
+        id:loaded_img
+        source:'mCherry-0003.png'
+        size_hint:(None,None)
+        size:self.texture_size
+        keep_ratio:True
+        allow_stretch:True
